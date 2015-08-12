@@ -1,0 +1,222 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    margin-bottom: 15px;  /* size of footer */
+    font-family: "Helvetica Neue", Helvetica , Arial, sans-serif;
+}
+
+body a:link, a:visited, a:hover{
+    color: #6B6B6B;
+}
+
+.container-full {
+  margin: 0 auto;
+  width: 97%;
+}
+
+.navbar {
+    margin-bottom: 0;
+}
+
+/* navbar hamburger */
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #CEEDDB;
+}
+/* navbar hamburger background-color */
+.navbar-toggle {}
+
+/* navbar hamburger when clicked */
+.navbar-default .navbar-toggle:focus { background-color: #CEEDDB; }
+.navbar-default .navbar-toggle:focus .icon-bar { color: #6B6B6B; }
+
+@font-face {
+    font-family: 'marck_scriptregular';
+    src: url('../fonts/marckscript-regular-webfont.eot');
+    src: url('../fonts/marckscript-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/marckscript-regular-webfont.woff2') format('woff2'),
+         url('../fonts/marckscript-regular-webfont.woff') format('woff'),
+         url('../fonts/marckscript-regular-webfont.ttf') format('truetype'),
+         url('../fonts/marckscript-regular-webfont.svg#marck_scriptregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.title-breadcrumb {
+    display: inline;
+}
+
+#page-content {
+    /* bootstrap navbar is 50px; */
+    margin-top: 50px;
+    min-height: 400px;
+}
+
+/* shades: # CEEDDB; B7E8D2; d4efe0; e7f6ed*/
+#column_city_checkboxes {}
+
+#city_checkboxes_list li:nth-child(odd){
+    background-color: #d4efe0;
+}
+
+#city_checkboxes_list li label {
+    padding-left: .5em;
+}
+
+#column_backend_selections {}
+
+#column_output {}
+
+.li_backend {
+    padding: 1em 0;
+}
+
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 15px;
+}
+
+.footer-engine{
+    font-size:0.7em;
+    margin:0;
+    padding:0;
+}
+
+.a_invert_link a:link, .a_invert_link a:visited, .a_invert_link a:hover{
+    color: #CEEDDB;
+}
+
+.navbar-default .navbar-nav>li>a{
+    color: #CEEDDB;
+}
+
+.navbar-default .navbar-nav>li>a:hover{
+    background-color: #CEEDDB;
+    color: #6B6B6B;
+}
+
+#brand {
+    color: #d4efe0;
+}
+
+.vcenter {
+    /* ie11+ - good enough*/
+    display: flex;
+    align-items: center;
+}
+
+.hcenter {
+    margin: 0 auto;
+}
+
+.text-hcenter {
+    text-align: center;
+}
+
+.dark-color {
+    color: #6B6B6B;
+}
+
+.light-color {
+    color: #CEEDDB;
+}
+
+.ok {
+    color: #79EA9D;
+}
+
+.warning {
+    color: #FFDE93;
+}
+
+.error {
+    color: #FC8A88;
+}
+
+.bg-dark-color {
+    background-color: #6B6B6B;
+}
+
+.bg-light-color{
+    background-color: #CEEDDB;
+}
+
+.bg-ok, .btn-success {
+    background-color: #79EA9D;
+}
+
+.bg-warning, .btn-warning {
+    background-color: #FFDE93;
+}
+
+.bg-error, .btn-danger {
+    background-color: #FC8A88;
+}
+
+.plainlink a {
+    text-decoration: none;
+}
+
+.width_100 {
+    width:100%;
+}
+
+.width_80 {
+    width:80%;
+    min-width: 8em;
+}
+
+.mheight_600 {
+    min-height: 600px;
+}
+
+.mheight_300 {
+    min-height: 300px;
+}
+
+
+.pad_top_25 {
+    padding-top: 25px;
+}
+
+.pad_top_50 {
+    padding-top: 50px;
+}
+
+/* Checkbox resize: IE10+, FF30+, Chrome27+, Safari5.1+ */
+.bigcheck input[type=checkbox] {
+    transform: scale(1.25);
+    -webkit-transform: scale(1.25);
+}
+
+.bigcheck2x input[type=checkbox] {
+    transform: scale(2);
+    -webkit-transform: scale(2);
+}
+
+
+/* loading spinner */
+.glyphicon-refresh-animate {
+    -animation: spin .7s infinite linear;
+    -webkit-animation: spin2 .7s infinite linear;
+}
+
+@keyframes spin {
+    from { transform: scale(1) rotate(0deg);}
+    to { transform: scale(1) rotate(180deg);}
+}
+
+@-webkit-keyframes spin2 {
+    from { -webkit-transform: rotate(0deg);}
+    to { -webkit-transform: rotate(180deg);}
+}
+
+/* map stuff */
+#output_map {
+    min-height: 500px;
+    height:100%;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="{{ url_for('static', filename='css/reset.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='js/plugins/jquery-ui-1.11.4/jquery-ui.min.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='js/plugins/jquery-ui-1.11.4/jquery-ui.structure.min.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='js/plugins/jquery-ui-1.11.4/jquery-ui.theme.min.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='plugins/leaflet-0.7.3/leaflet.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet">
+<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+<title>ffi4wd::jumper</title>
+{% block head %}{% endblock %}
+</head>
+<body>
+<!-- site navigation -->
+{% include "components/navbar.html" %}
+
+<!-- page content -->
+<div class="container-full" id="page-content">
+<!-- flashed messages -->
+{% with messages = get_flashed_messages() %}
+{% if messages %}
+<div id="flashed-messages-wrap">
+  <div id="flashed-messages">
+    {% for category, msg in get_flashed_messages(with_categories=true) %}
+      <p class="flashed-message flash-{{ category|default('info') }}">{{ msg }}</p>
+    {% endfor %}
+  </div>
+</div>
+{% endif %}
+{% endwith %}
+
+<!-- include body -->
+{% block body %}{% endblock %}
+
+</div><!-- primary page .container (does not include navbar or footer) -->
+
+
+<!-- footer (if any) -->
+<footer class="footer text-center bg-light-color">
+  <div class="container">
+    {% block footer %}{% endblock footer %}
+    <p class="text-muted footer-engine">tristan fisher 2015  <a href="https://github.com/tristanfisher/ffi4wd">view the source</a></p>
+  </div>
+</footer>
+
+<!-- end of page JS inclusion -->
+<script src="{{ url_for('static', filename='js/jquery-2.1.4.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/plugins/jquery-ui-1.11.4/jquery-ui.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+<script src="{{ url_for('static', filename='plugins/leaflet-0.7.3/leaflet.js') }}"></script>
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

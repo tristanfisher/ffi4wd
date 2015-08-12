@@ -1,0 +1,7 @@
+easyos
+Flask
+Flask-Script
+Flask-SQLAlchemy
+Flask-WTF
+# required for cython
+cython
