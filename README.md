@@ -13,6 +13,9 @@ This repository contains the implementations of the techniques and ideas that we
 The slides should be uploaded within a day of the talk and the video should be linked here when available (please open a GH issue if this is not the case).
 
 ----
+
+![screenshot of the web application](https://raw.github.com/tristanfisher/ffi4wd/master/ffi4wd.png)
+
 This repository contains a web application useful for testing various FFI approaches.
 
 ----
