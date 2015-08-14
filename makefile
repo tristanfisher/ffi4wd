@@ -28,6 +28,7 @@ SRC_CTYPES = $(SRC_DIR)ctypes/
 SRC_CPP = $(SRC_DIR)cpp/
 
 DST_CYTHON=$(MODULE_DIR)cython/
+DST_CYTHON=$(MODULE_DIR)ctypes/
 DST_FFI = $(MODULE_DIR)ffi/
 DST_BOOST = $(MODULE_DIR)ffi_boost/
 
@@ -49,7 +50,7 @@ cython:
 
 ctypes:
 	@echo "Making CTypes required files..."
-	clang -shared -undefined dynamic_lookup -o $(SRC_CTYPES)libffi_ctypes.so $(SRC_CTYPES)ffi_ctypes.cpp
+	clang -shared -undefined dynamic_lookup -o $(DST_CTYPES)libffi_ctypes.so $(SRC_CTYPES)ffi_ctypes.cpp
 
 cpp:
 	@echo "Making C++ FFI required files..."

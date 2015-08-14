@@ -1,14 +1,10 @@
-from ctypes import cdll
+#!/usr/bin/env python
 
-path = 'libffi_ctypes.so'
-lib = cdll.LoadLibrary(path)
+import sys
+sys.path.append('..')
+sys.path.append('.')
 
-class HelloWorld(object):
-    def __init__(self):
-        self.obj = lib.HelloWorld_new()
+from jumper.blueprints.backends.modules.ctypes.ffi_ctypes import FFICTypes
 
-    def example_world(self):
-        lib.HelloWorld_example_world(self.obj)
-
-t = HelloWorld()
+t = FFICTypes()
 t.example_world()
