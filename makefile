@@ -28,7 +28,7 @@ SRC_CTYPES = $(SRC_DIR)ctypes/
 SRC_CPP = $(SRC_DIR)cpp/
 
 DST_CYTHON=$(MODULE_DIR)cython/
-DST_CYTHON=$(MODULE_DIR)ctypes/
+DST_CTYPES=$(MODULE_DIR)ctypes/
 DST_FFI = $(MODULE_DIR)ffi/
 DST_BOOST = $(MODULE_DIR)ffi_boost/
 
