@@ -1,4 +1,5 @@
 easyos
+nose
 Flask
 Flask-Script
 Flask-SQLAlchemy
