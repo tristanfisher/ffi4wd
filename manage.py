@@ -2,8 +2,8 @@
 import os
 
 from flask.ext.script import Command, Manager, Server, Option, prompt_bool, prompt_choices
-
 from jumper import app
+import nose
 
 # Load our configuration onto our application object
 _conf = os.getenv("APP_CONFIG", "DevelopmentConfig")
