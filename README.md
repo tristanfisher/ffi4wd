@@ -2,6 +2,10 @@
 
 Language interoperability for coders with impatient users.
 
+Video of talk available here (click on image): 
+
+<a href="https://www.youtube.com/watch?v=Dpdl76rn7P8" target="_blank"><img src="http://img.youtube.com/vi/Dpdl76rn7P8/0.jpg" alt="video of talk on youtube" width="240" height="180" border="5" /></a>
+
 ---
 
 Python is a general-purpose programming language that is well-suited for a web application stack.  That said, there are sometimes opportunities to increase performance or productivity by mixing the benefits of different languages,
