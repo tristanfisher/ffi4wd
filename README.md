@@ -2,7 +2,7 @@
 
 Language interoperability for coders with impatient users.
 
-Video of talk available here (click on image): 
+Video of talk available here (click on image):
 
 <a href="https://www.youtube.com/watch?v=Dpdl76rn7P8" target="_blank"><img src="http://img.youtube.com/vi/Dpdl76rn7P8/0.jpg" alt="video of talk on youtube" width="240" height="180" border="5" /></a>
 
@@ -24,13 +24,16 @@ This repository contains a web application useful for testing various FFI approa
 
 ----
 
-## Requirements
+## Suggested requirements
 
 	- Python 3.4
+    - Python 3.4 header files (python3.4-dev on Debian-based OSes if Python not from source)
 	- OS X or Linux
 	- A C and C++ compiler
 	    - If OS X, probably Xcode command-line tools
 	    - Buyer's choice on Linux (gcc is popular)
+
+Python versions > 3.4 should also work, but have not been tested.
 
 ## Installation and setup
 

@@ -1,8 +1,8 @@
-easyos
-nose
-Flask
-Flask-Script
-Flask-SQLAlchemy
-Flask-WTF
+easyos==2.2
+nose==1.3.7
+Flask==0.10.1
+Flask-Script==2.0.5
+Flask-SQLAlchemy==1.0
+Flask-WTF==0.12
 # required for cython
-cython
+Cython==0.22.1
